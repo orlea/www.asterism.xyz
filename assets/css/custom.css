@@ -1,0 +1,7 @@
+div.col-md-5 {
+    flex: 0 0 83.33333333%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 83.3333%;
+    max-width: 83.33333333%;
+}
