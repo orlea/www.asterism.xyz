@@ -1,0 +1,21 @@
+version: 0.2
+env:
+  variables:
+    LC_CTYPE: "C.UTF-8"
+    hugo_version : "0.55.6"
+phases:
+    install:
+        commands:
+            - pip install awscli --upgrade --user
+            - wget https://github.com/gohugoio/hugo/releases/download/v${hugo_version}/hugo_extended_${hugo_version}_Linux-64bit.deb
+            - dpkg -i hugo_extended_${hugo_version}_Linux-64bit.deb
+    build:
+        commands:
+            - hugo -F
+    post_build:
+       commands:
+            - echo "S3 Upload Beginning"
+            - aws s3 sync --delete ./public s3://${bucket_name}
+            - echo "S3 Upload Complete"
+            - echo "Delete CloudFront cache"
+            - aws cloudfront create-invalidation --distribution-id ${distribution_id} --paths "/*"
