@@ -1,8 +1,9 @@
 ---
-title: Pleromaへのコントリビュート
-summary: ドキュメントのみ
+title: Pleroma
+summary: ドキュメント等へのコントリビュート
 tags:
 - contribution
+- Fediverse
 date: "2019-06-24"
 
 # Optional external URL for project (replaces project detail page).

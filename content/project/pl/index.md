@@ -4,6 +4,7 @@ summary: お一人様Pleromaサーバ
 tags:
 - mysite
 - AWS
+- Fediverse
 date: "2019-06-20"
 share: false
 # Optional external URL for project (replaces project detail page).
@@ -33,4 +34,8 @@ https://pl.asterism.xyz/aries
 
 mstdn.asterism.xyzのメンテナンス中、あるいはPleroma関連の話題の時はこちらのアカウントを使うことが多いですが、特別使い分けを意識しているわけではありません。
 
-AWS Lightsailの$3.5プラン RAM512MB, vCPU1コアで動いています。
+AWSでホストしており、docker swarmを使っています。
+
+大まかな構成については私のブログをご覧ください。
+
+https://blog.asterism.xyz/posts/2019-08-09/

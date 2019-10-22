@@ -1,6 +1,6 @@
 ---
-title: Hugoテーマへのコントリビュート
-summary: ブログで使っているHugo-future-imperfect-slim
+title: Hugo-future-imperfect-slim
+summary: Hugoテーマへのコントリビュート
 tags:
 - contribution
 - Hugo

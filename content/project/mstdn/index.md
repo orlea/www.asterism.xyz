@@ -36,4 +36,8 @@ https://mstdn.asterism.xyz
 
 私は特にTwitter社の被害を被ったわけではありませんが、自分でサーバを建てつつしかも外部とのやり取りもできるという点に魅力を感じインスタンスを建てました。
 
-AWS EC2のt3.smallで動いています。(いわゆるdocker構成)
+AWSでホストしており、docker swarmを使っています。
+
+大まかな構成については私のブログをご覧ください。
+
+https://blog.asterism.xyz/posts/2019-08-01/
